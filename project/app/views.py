@@ -112,7 +112,7 @@ def Login(req):
                    messages.warning(req,'Email and password not match')
                    return redirect('Login') 
             else:
-                messages.warning(req,'you are not my employees')
+                messages.warning(req,'User login temporary unavailable only employees can login')
                 return redirect('Login')
             
     return render(req,'Login.html')
